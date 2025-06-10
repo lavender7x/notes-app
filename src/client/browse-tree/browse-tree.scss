@@ -1,0 +1,85 @@
+$browse-tree-font-color: #42526e;
+$browse-tree-icon-color: #42526e;
+
+.browse-tree {
+    min-width: 300px;
+
+    position: absolute;
+    position: sticky;
+    top: 40px;
+    font-size: 0.9rem;
+
+    .browse-tree-item {
+        &.browse-tree-level-0 {
+            padding-left: 1rem;
+        }
+
+        &.browse-tree-level-1 {
+            padding-left: 1.5rem;
+        }
+
+        &.browse-tree-level-2 {
+            padding-left: 2rem;
+        }
+
+        margin-bottom: 0.5rem;
+
+        .flex-container {
+            margin-bottom: 0.5rem;
+        }
+
+        .item-flex {
+            position: relative;
+            display: flex;
+
+            &.active {
+                font-weight: bold;
+            }
+
+            a {
+                font-size: 0.9rem;
+                color: $browse-tree-font-color;
+            }
+
+            :nth-child(2) {
+                margin-top: 2px;
+            }
+        }
+
+        .icon-container {
+            position: relative;
+            min-width: 1rem;
+
+            .dot {
+                height: 4px;
+                width: 4px;
+                top: 10px;
+                left: 4px;
+                position: absolute;
+                background-color: $browse-tree-icon-color;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .expand-button {
+                border: 0;
+                padding: 0;
+                background-color: unset;
+                height: unset;
+                margin: 0;
+
+                .material-symbols-rounded {
+                    position: absolute;
+                    top: 4px;
+                    font-size: 16px;
+                    color: $browse-tree-icon-color
+                }
+            }
+        }
+    }
+
+    .new-post-link {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,263 @@
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/browse-tree/browse-tree.scss ***!
+  \**********************************************************************************************************************************/
+.browse-tree {
+  min-width: 300px;
+  position: absolute;
+  position: sticky;
+  top: 40px;
+  font-size: 0.9rem;
+}
+.browse-tree .browse-tree-item {
+  margin-bottom: 0.5rem;
+}
+.browse-tree .browse-tree-item.browse-tree-level-0 {
+  padding-left: 1rem;
+}
+.browse-tree .browse-tree-item.browse-tree-level-1 {
+  padding-left: 1.5rem;
+}
+.browse-tree .browse-tree-item.browse-tree-level-2 {
+  padding-left: 2rem;
+}
+.browse-tree .browse-tree-item .flex-container {
+  margin-bottom: 0.5rem;
+}
+.browse-tree .browse-tree-item .item-flex {
+  position: relative;
+  display: flex;
+}
+.browse-tree .browse-tree-item .item-flex.active {
+  font-weight: bold;
+}
+.browse-tree .browse-tree-item .item-flex a {
+  font-size: 0.9rem;
+  color: #42526e;
+}
+.browse-tree .browse-tree-item .item-flex :nth-child(2) {
+  margin-top: 2px;
+}
+.browse-tree .browse-tree-item .icon-container {
+  position: relative;
+  min-width: 1rem;
+}
+.browse-tree .browse-tree-item .icon-container .dot {
+  height: 4px;
+  width: 4px;
+  top: 10px;
+  left: 4px;
+  position: absolute;
+  background-color: #42526e;
+  border-radius: 50%;
+  display: inline-block;
+}
+.browse-tree .browse-tree-item .icon-container .expand-button {
+  border: 0;
+  padding: 0;
+  background-color: unset;
+  height: unset;
+  margin: 0;
+}
+.browse-tree .browse-tree-item .icon-container .expand-button .material-symbols-rounded {
+  position: absolute;
+  top: 4px;
+  font-size: 16px;
+  color: #42526e;
+}
+.browse-tree .new-post-link {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/notes-app.scss ***!
+  \********************************************************************************************************************/
+.notes-app .code-block {
+  border: 1px solid #aaaaaa;
+}
+.notes-app .code-block .edit {
+  overflow: auto;
+}
+.notes-app .code-block .header {
+  display: flex;
+  background-color: lightblue;
+  background-color: #eee;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.notes-app .code-block .header .title {
+  align-self: center;
+}
+.notes-app .code-block .header .copy {
+  margin-left: auto;
+}
+.notes-app .code-block .header .copy-button {
+  background-color: unset;
+  outline: none;
+  border: 0;
+}
+.notes-app .code-block .header .copy-button:hover {
+  cursor: pointer;
+}
+.notes-app .code-block pre {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fafafa;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+.notes-app .code-block pre code {
+  background-color: unset;
+  padding: unset;
+  color: unset;
+  border: unset;
+}
+.notes-app code {
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #0049B0;
+  text-decoration: none;
+}
+
+.notes-app .notes-app-header {
+  position: sticky;
+  top: 0;
+  background-color: #0049B0;
+}
+.notes-app .notes-app-header .version-number {
+  margin-left: 0.5rem;
+  color: white;
+  position: absolute;
+  top: 10px;
+}
+.notes-app .notes-app-container {
+  display: flex;
+}
+.notes-app .notes-app-container .notes-app-tree {
+  width: 300px;
+  background-color: #f4f5f7;
+}
+.notes-app .notes-app-container .notes-app-content {
+  width: calc(100% - 300px);
+}
+
+.default-button {
+  background-color: #2980b9; /* soft blue */
+  color: #ffffff;
+  padding: 4px 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.default-button:hover {
+  background-color: #2471a3; /* darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.default-button:active {
+  background-color: #2471a3; /* even darker when pressed */
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+th {
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/post-view/post-view.scss ***!
+  \******************************************************************************************************************************/
+.post-view {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.post-view-header {
+  display: flex;
+}
+.post-view-header-actions {
+  margin-left: auto;
+  align-self: center;
+}
+.post-view-metadata {
+  font-size: 0.8rem;
+  color: #222222;
+}
+.post-view .code-block {
+  max-width: 50%;
+}
+.post-view img {
+  max-width: 80%;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/search-result/search-result.scss ***!
+  \**************************************************************************************************************************************/
+.search-result {
+  margin-left: 2rem;
+}
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/search/search.scss ***!
+  \************************************************************************************************************************/
+.main-search-container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  position: static;
+}
+.main-search-container .main-search {
+  height: 1.5rem;
+  background-color: rgba(9, 30, 66, 0.48);
+  color: #deebff;
+  border: 0;
+  width: 800px;
+}
+.main-search-container .create-new-button {
+  position: absolute;
+  right: 0;
+  margin-right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}

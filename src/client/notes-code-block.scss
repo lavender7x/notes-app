@@ -1,0 +1,60 @@
+.notes-app {
+    .code-block {
+        border: 1px solid #aaaaaa;
+
+        .edit {
+            overflow: auto;
+        }
+
+        .header {
+            display: flex;
+            background-color: lightblue;
+            background-color: #eee;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            .title {
+                align-self: center;
+            }
+
+            .copy {
+                margin-left: auto;
+
+            }
+
+            .copy-button {
+                background-color: unset;
+                outline: none;
+                border: 0;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        pre {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background-color: #fafafa;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1rem;
+
+            code {
+                background-color: unset;
+                padding: unset;
+                color: unset;
+                border: unset;
+            }
+        }
+    }
+
+    code {
+        padding: 2px 4px;
+        color: #c7254e;
+        background-color: #f9f2f4;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,26 @@
+.post-view {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    &-header {
+        display: flex;
+
+        &-actions {
+            margin-left: auto;
+            align-self: center;
+        }
+    }
+
+    &-metadata {
+        font-size: 0.8rem;
+        color: #222222;
+    }
+
+    .code-block {
+        max-width: 50%;
+    }
+
+    img {
+        max-width: 80%;
+    }
+}

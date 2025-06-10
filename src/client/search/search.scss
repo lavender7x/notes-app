@@ -1,0 +1,22 @@
+.main-search-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    position: static;
+
+    .main-search {
+        height: 1.5rem;
+        background-color: rgba(9, 30, 66, 0.48);
+        color: #deebff;
+        border: 0;
+        width: 800px;
+    }
+
+    .create-new-button {
+        position: absolute;
+        right: 0;
+        margin-right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

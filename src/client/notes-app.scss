@@ -1,0 +1,99 @@
+$generic-blue: #0049B0;
+
+@import './notes-code-block.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+    color: $generic-blue;
+    text-decoration: none;
+}
+
+.notes-app {
+    .notes-app-header {
+        position: sticky;
+        top: 0;
+        background-color: $generic-blue;
+
+        .version-number {
+            margin-left: 0.5rem;
+            color:white;
+            position: absolute;
+            top: 10px;
+        }
+    }
+
+    .notes-app-container {
+        display: flex;
+
+        .notes-app-tree {
+            width: 300px;
+            background-color: #f4f5f7;
+        }
+
+        .notes-app-content {
+            width: calc(100% - 300px);
+        }
+    }
+}
+
+.default-button {
+    background-color: #2980b9; /* soft blue */
+    color: #ffffff;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.default-button:hover {
+    background-color: #2471a3; /* darker blue on hover */
+    // transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.default-button:active {
+    background-color: #2471a3; /* even darker when pressed */
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+th {
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
