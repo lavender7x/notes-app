@@ -21,6 +21,7 @@ I use this tool as my personal knowledge base/notes application.
 
 ## Usage
 
+1. `mkdir content`
 1. `npm i`
 1. `npm run start`
 
